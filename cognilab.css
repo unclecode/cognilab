@@ -761,6 +761,7 @@ pre {
     font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
     font-size: 0.9rem;
     line-height: 1.5;
+    white-space: pre-wrap;
 }
 
 code {
@@ -1072,7 +1073,7 @@ code {
 @media (max-width: 1024px) {
     .crawl4ai-content {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 5rem;
     }
     
     .metrics-card,
