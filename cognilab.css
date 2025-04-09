@@ -667,8 +667,8 @@ nav {
     background: rgba(21, 27, 41, 0.5);
     border: 1px solid rgba(139, 92, 246, 0.2);
     border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -682,12 +682,12 @@ nav {
 }
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
     color: var(--primary-light);
     position: relative;
-    padding-bottom: 0.75rem;
+    padding-bottom: 0.9rem;
 }
 
 .card-title::after {
@@ -695,10 +695,10 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 3px;
+    width: 80px;
+    height: 4px;
     background: linear-gradient(to right, var(--accent-purple), var(--accent-cyan));
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .features-list {
@@ -817,44 +817,47 @@ code {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute content evenly */
+    padding: 2.5rem;
 }
 
 .metrics-badge {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .metrics-badge img {
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    max-width: 300px;
+    height: auto;
 }
 
 .metrics-badge img:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
 
 .metrics-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin: 1rem 0 2.5rem;
     flex-grow: 1; /* Allow metrics grid to take available space */
 }
 
 .metric-item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     background: rgba(15, 23, 42, 0.5);
-    padding: 0.75rem;
-    border-radius: 4px;
+    padding: 1rem;
+    border-radius: 8px;
     border: 1px solid rgba(226, 232, 240, 0.1);
 }
 
 .metric-icon {
-    width: 24px;
-    height: 24px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -866,37 +869,39 @@ code {
 .star-icon::before {
     content: "★";
     color: #F59E0B;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .fork-icon::before {
     content: "Y";
     color: #D1D5DB;
-    font-size: 14px;
+    font-size: 20px;
     transform: scaleX(-1);
 }
 
 .download-icon::before {
     content: "↓";
     color: #10B981;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .version-icon::before {
     content: "⌘";
     color: #3B82F6;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .metric-label {
     color: rgba(226, 232, 240, 0.6);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .metric-value {
     margin-left: auto;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--primary-light);
+    font-size: 1.4rem;
 }
 
 .star-history {
