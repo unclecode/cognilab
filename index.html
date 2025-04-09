@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognilab - Futuristic Design Sample</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cognilab.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.151.3/three.min.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Cognilab</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#crawl4ai" class="nav-link">Crawl4AI</a>
+                <a href="#cloud" class="nav-link">Cloud</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#careers" class="nav-link">Careers</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="canvas-container" id="canvas"></div>
+
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <div class="dots-container" id="dots-container"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-subtitle">Redefining the Future</div>
+                <h1 class="hero-title">Democratizing AI through <span class="highlight">Accessible Data</span></h1>
+                <p class="hero-description">Cognilab pioneers the research and builds the tools necessary to generate
+                    high-quality data, empowering innovators everywhere to build the future of artificial intelligence.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#crawl4ai" class="primary-btn">
+                        Explore Crawl4AI
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#cloud" class="secondary-btn">
+                        FlashCrawl [Soon]
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 10V3L4 14H11V21L20 10H13Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="pattern">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.5 9H21.5L15.5 13.5L18 21L12 16.5L6 21L8.5 13.5L2.5 9H9.5L12 2Z"
+                            stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>OUR ORIGIN STORY</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">From Open Source Need to AI Vision</h2>
+
+            <div class="about-content">
+                <p class="about-text">
+                    It started with a realization: the AI revolution was gated by data access. While building
+                    <a href="https://github.com/unclecode/crawl4ai" target="_blank" class="text-link">Crawl4AI</a>,
+                    we witnessed the community's immense need for powerful, accessible web data tools. Its rapid
+                    growth highlighted a critical bottleneck.
+                </p>
+
+                <p class="about-text">
+                    Cognilab was founded to scale that mission. We evolved into a dedicated AI Research Lab
+                    focused on enabling everyone to generate the data needed to build, train, and innovate with AI,
+                    fostering a truly democratized AI ecosystem.
+                </p>
+            </div>
+
+            <div class="glowing-path">
+                <div class="path-dot"></div>
+                <div class="path-dot"></div>
+                <div class="path-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="crawl4ai" class="crawl4ai-section">
+        <div class="crawl4ai-container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L6 5.5V10.5L12 14L18 10.5V5.5L12 2Z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 12L12 15.5L18 12" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6 16L12 19.5L18 16" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>FLAGSHIP PROJECT</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Crawl4AI: The Open Source Data Engine</h2>
+            <p class="section-subtitle">Our highly acclaimed, community-driven library for fast, flexible, and LLM-friendly web crawling and data extraction.</p>
+
+            <div class="crawl4ai-content">
+                <div class="features-card">
+                    <h3 class="card-title">Key Features & Access</h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Lightning Fast</strong>: High-speed asynchronous crawling, 6x faster than alternatives</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>LLM-Optimized</strong>: Smart, concise Markdown and JSON output for RAG and fine-tuning</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Advanced Browser Control</strong>: Full JavaScript rendering with session management and proxies</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Intelligent Extraction</strong>: BM25 filtering, structured data extraction with custom schemas</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Multiple Crawling Strategies</strong>: BFS, DFS, and BestFirst for comprehensive site exploration</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Enterprise-Ready</strong>: Docker support, CLI tools, and cloud deployments</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="code-example">
+                        <pre><code class="language-python"><span class="comment"># Simple web crawling with Crawl4AI - Get Markdown in 5 lines</span>
+<span class="keyword">import</span> asyncio
+<span class="keyword">from</span> crawl4ai <span class="keyword">import</span> AsyncWebCrawler
+
+<span class="keyword">async def</span> <span class="function">main</span>():
+    <span class="keyword">async with</span> AsyncWebCrawler() <span class="keyword">as</span> crawler:
+        result = <span class="keyword">await</span> crawler.arun(
+            url=<span class="string">"https://example.com"</span>
+        )
+        <span class="function">print</span>(result.markdown)
+
+<span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:
+    asyncio.run(main())</code></pre>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="https://github.com/unclecode/crawl4ai" target="_blank" class="action-button github-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                        <a href="https://docs.crawl4ai.com/" target="_blank" class="action-button docs-button">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="metrics-card">
+                    <h3 class="card-title">Project Status & Metrics</h3>
+                    <div class="metrics-badge">
+                        <img src="https://trendshift.io/api/badge/repositories/11716" alt="unclecode/crawl4ai | Trendshift" width="250" height="55"/>
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-icon star-icon"></div>
+                            <div class="metric-label">Stars:</div>
+                            <div class="metric-value">38k+</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon fork-icon"></div>
+                            <div class="metric-label">Forks:</div>
+                            <div class="metric-value">3.5k+</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon download-icon"></div>
+                            <div class="metric-label">Downloads:</div>
+                            <div class="metric-value">300k+/month</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-icon version-icon"></div>
+                            <div class="metric-label">Version:</div>
+                            <div class="metric-value">0.5.0+</div>
+                        </div>
+                    </div>
+                    <div class="star-history">
+                        <h4 class="history-title">Star History</h4>
+                        <div class="history-chart">
+                            <a href="https://star-history.com/#unclecode/crawl4ai&Date" target="_blank">
+                                <img src="https://api.star-history.com/svg?repos=unclecode/crawl4ai&type=Date" alt="Star History Chart" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="showcase-section">
+                <div class="showcase-header">
+                    <h3 class="showcase-title">Community Showcase</h3>
+                    <a href="https://www.youtube.com/results?search_query=crawl4ai" target="_blank" class="see-more-link">
+                        See more
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12h14M19 12l-7-7m7 7l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="showcase-grid">
+                    <div class="showcase-item">
+                        <a href="https://youtu.be/xo3qK6Hg9AA?si=Pc7qKBXIYz1p_Eoi" target="_blank" class="video-link">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/xo3qK6Hg9AA/maxresdefault.jpg" alt="Crawl4AI: Web Crawler in 5 Minutes" />
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="video-title">Crawl4AI: Web Crawler in 5 Minutes</p>
+                    </div>
+                    <div class="showcase-item">
+                        <a href="https://youtu.be/Osl4NgAXvRk?si=UCBdOBpL1Xh2Q4bz" target="_blank" class="video-link">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/Osl4NgAXvRk/maxresdefault.jpg" alt="Web Search Engine for LLMs | Crawl4AI" />
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="video-title">Web Search Engine for LLMs | Crawl4AI</p>
+                    </div>
+                    <div class="showcase-item">
+                        <a href="https://youtu.be/c5dw_jsGNBk?si=DuKb1i1U4WtZZQMF" target="_blank" class="video-link">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/c5dw_jsGNBk/maxresdefault.jpg" alt="Crawl4AI: Building an Open Source Crawler" />
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="video-title">Crawl4AI: Building an Open Source Crawler</p>
+                    </div>
+                </div>
+                <div class="showcase-grid showcase-grid-second-row">
+                    <div class="showcase-item">
+                        <a href="https://youtu.be/JWfNLF_g_V0?si=VeKlRbTTqHEv6DJd" target="_blank" class="video-link">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/JWfNLF_g_V0/maxresdefault.jpg" alt="Crawl4AI Tutorial | Getting Started" />
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="video-title">Crawl4AI Tutorial | Getting Started</p>
+                    </div>
+                    <div class="showcase-item">
+                        <a href="https://youtu.be/Htb_NsGlbgc?si=Rz8xNhTilvCqa2rX" target="_blank" class="video-link">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/Htb_NsGlbgc/maxresdefault.jpg" alt="Web Scraping with Crawl4AI" />
+                                <div class="play-button">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 3l14 9-14 9V3z" fill="currentColor" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <p class="video-title">Web Scraping with Crawl4AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cloud" class="cloud-section">
+        <div class="cloud-container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 10V3L4 14H11V21L20 10H13Z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>NEXT EVOLUTION</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Introducing FlashCrawl <span class="coming-soon">[Coming Soon]</span></h2>
+            <p class="section-subtitle">Building on Crawl4AI's success, FlashCrawl offers a scalable, managed platform for seamless AI data generation. Effortless crawling, powerful transformation pipelines, and robust infrastructure via API.</p>
+
+            <div class="cloud-cta">
+                <a href="#" class="cloud-button disabled" aria-disabled="true">
+                    Request Early Access & Updates (Will be available soon)
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="cloud-illustration">
+                <svg width="300" height="150" viewBox="0 0 300 150" class="cloud-svg" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="cloudGradient" x1="75" y1="30" x2="120" y2="110" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8B5CF6" stop-opacity="0.6"/>
+                            <stop offset="1" stop-color="#2DD4BF" stop-opacity="0.6"/>
+                        </linearGradient>
+                        <radialGradient id="aiNodeGradient" cx="0.5" cy="0.5" r="0.5" fx="0.5" fy="0.5">
+                            <stop offset="0%" stop-color="#2DD4BF" />
+                            <stop offset="100%" stop-color="#8B5CF6" />
+                        </radialGradient>
+                        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur stdDeviation="3" result="blur" />
+                            <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                        </filter>
+                    </defs>
+                    
+                    <!-- Cloud shape -->
+                    <path class="cloud-path" d="M75 112.5 C 30 112.5, 30 60, 75 60 C 75 30, 120 30, 120 60 C 165 60, 165 112.5, 120 112.5 Z" fill="url(#cloudGradient)" filter="url(#glow)" />
+                    
+                    <!-- Connection lines -->
+                    <path class="connection-line1" d="M150 86.25 L 195 86.25" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="4 4" />
+                    <path class="connection-line2" d="M202.5 86.25 L 247.5 86.25" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="4 4" />
+                    
+                    <!-- AI Node -->
+                    <circle class="ai-node" cx="262.5" cy="86.25" r="15" fill="url(#aiNodeGradient)" filter="url(#glow)" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research-section">
+        <div class="research-container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 3v3m4-3v3M5 8h14M5 21h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v11a2 2 0 002 2z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 14h1v1h-1zM14 14h1v1h-1zM9 18h1v1h-1zM14 18h1v1h-1z" fill="#2DD4BF" />
+                    </svg>
+                    <span>RESEARCH & INNOVATION</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Pioneering the Future of Data Generation</h2>
+            <p class="section-subtitle">Our work extends beyond crawling. Cognilab's research explores novel methods to ensure data is never the bottleneck to AI advancement:</p>
+
+            <div class="research-grid">
+                <div class="research-card" data-index="1">
+                    <div class="card-icon atom-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12v.01M19.938 11c0 5.523-3.582 10-8 10s-8-4.477-8-10 3.582-10 8-10 8 4.477 8 10z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Synthetic Data & Augmentation</h3>
+                        <p class="card-text">Creating realistic, diverse datasets programmatically.</p>
+                    </div>
+                </div>
+
+                <div class="research-card" data-index="2">
+                    <div class="card-icon text-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Multimodal Data Extraction</h3>
+                        <p class="card-text">Processing and structuring text, images, and video data.</p>
+                    </div>
+                </div>
+
+                <div class="research-card" data-index="3">
+                    <div class="card-icon shield-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12l2 2 4-4m5.618-4.016a11.955 11.955 0 01-2.622 9.04m-5.362-2.942a3 3 0 11-4.243-4.243m0 0L3 7m10 10l2-2m-2 2l-2-2m2 2l2 2m-2-2l2-2" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Privacy-Preserving Techniques</h3>
+                        <p class="card-text">Utilizing Federated Learning, Differential Privacy, etc.</p>
+                    </div>
+                </div>
+
+                <div class="research-card" data-index="4">
+                    <div class="card-icon scale-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ethical AI & Data Sourcing</h3>
+                        <p class="card-text">Developing responsible frameworks for data collection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions-section">
+        <div class="solutions-container">
+            <div class="solutions-grid">
+                <div class="solutions-content">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>CUSTOM SOLUTIONS</span>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title align-left">AI Consultancy & Integration</h2>
+                    <p class="solutions-text">Leverage our deep expertise in data extraction, AI pipelines, and LLMs. We offer bespoke solutions and strategic consulting tailored to your unique business challenges.</p>
+
+                    <a href="mailto:unclecode@crawl4ai.com?subject=Consultancy%20Inquiry" class="solutions-button">
+                        Request Consultation
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="partners-content">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 11h6m-6 4h6m-3-8v12m8-16H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>OUR NETWORK</span>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title align-left">Esteemed Partners</h2>
+                    <p class="solutions-text">We collaborate with leading technology companies and innovators to advance AI research and deliver powerful solutions.</p>
+
+                    <div class="partners-grid">
+                        <div class="partner-logo">GitHub</div>
+                        <div class="partner-logo">Groq</div>
+                        <div class="partner-logo">AlphaVantage</div>
+                        <div class="partner-logo">AlephNull</div>
+                        <div class="partner-logo">Kidocode</div>
+                        <div class="partner-logo">Socialfin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers" class="careers-section">
+        <div class="careers-container">
+            <div class="careers-grid">
+                <div class="career-card join-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>JOIN OUR TEAM</span>
+                        </div>
+                    </div>
+
+                    <h3 class="card-headline">Shape the Future With Us</h3>
+                    <p class="card-text">We're seeking passionate researchers, engineers, and product minds eager to democratize AI data access.</p>
+
+                    <a href="mailto:unclecode@crawl4ai.com?subject=Job%20Application" class="career-button">
+                        Contact Careers
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 7H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="career-card investor-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 6l-9.5 9.5-5-5L1 18" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17 6h6v6" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>INVESTORS & PARTNERS</span>
+                        </div>
+                    </div>
+
+                    <h3 class="card-headline">Invest in Innovation</h3>
+                    <p class="card-text">Connect with us to explore strategic investment and partnership opportunities that align with our vision.</p>
+
+                    <a href="mailto:unclecode@crawl4ai.com?subject=Investor%20Inquiry" class="career-button investor-button">
+                        Contact Investor Relations
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="section-header">
+                <div class="section-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 6l-10 7L2 6" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>GET IN TOUCH</span>
+                </div>
+            </div>
+
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Have questions? Want to discuss a project or opportunity? Reach out to us.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 6l-10 7L2 6" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Email:</span>
+                    <a href="mailto:unclecode@crawl4ai.com">unclecode@crawl4ai.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="12" cy="10" r="3" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Location:</span>
+                    <span>Singapore CBD, Singapore</span>
+                </div>
+
+                <div class="contact-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Phone:</span>
+                    <span>+65 8893 3453</span>
+                </div>
+            </div>
+
+            <div class="world-map-container">
+                <div class="world-map" id="world-map">
+                    <!-- SVG Map will be rendered here by JavaScript -->
+                </div>
+                <div class="singapore-beacon"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <p class="copyright">&copy; <span id="current-year"></span> Cognilab Pte. Ltd. // Singapore // All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Diffuser effect for text animation
+        const Diffuser = {
+            noiseCharacters: "▓▒░█*+<>|/\\!?@#$%".split(""),
+            revealText: function(element, options = {}) {
+                if (!element || element.dataset.diffused) return; // Prevent re-running
+                const { speed = 40, initialDelay = 0, noiseLevel = 0.15, charsPerFrame = 3 } = options; // Add charsPerFrame parameter
+                const originalHtml = element.dataset.originalHtml || element.innerHTML; // Store original HTML
+                element.dataset.originalHtml = originalHtml;
+
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = originalHtml;
+                const originalTextContent = tempDiv.textContent || "";
+                const textLength = originalTextContent.length;
+
+                // Calculate the element's height and fix it to prevent layout shifts
+                const originalHeight = element.offsetHeight;
+                element.style.minHeight = `${originalHeight}px`;
+
+                element.classList.remove('text-reveal-placeholder'); // Remove placeholder class
+                element.dataset.diffused = 'true'; // Mark as diffused
+
+                let currentIndex = 0;
+                let animationFrameId;
+
+                // Initial noise fill respecting spaces
+                let noisyText = "";
+                for (let i = 0; i < textLength; i++) {
+                    noisyText += (originalTextContent[i] === ' ' || originalTextContent[i] === '\n' || originalTextContent[i] === '\r') ? originalTextContent[i] : this.getRandomNoiseChar();
+                }
+                element.textContent = noisyText; // Start with noise text content
+
+                const animate = () => {
+                    let revealedText = "";
+                    let stillAnimating = false;
+                    for (let i = 0; i < textLength; i++) {
+                        if (i < currentIndex) {
+                            revealedText += originalTextContent[i];
+                        } else if (originalTextContent[i] === ' ' || originalTextContent[i] === '\n' || originalTextContent[i] === '\r') {
+                            revealedText += originalTextContent[i]; // Preserve whitespace
+                        } else {
+                            // Only add noise if still revealing this part
+                            if (currentIndex <= i + Math.random() * 5) { // Add some randomness to reveal speed
+                                revealedText += (Math.random() < noiseLevel) ? this.getRandomNoiseChar() : this.getRandomNoiseChar();
+                                stillAnimating = true;
+                            } else {
+                                revealedText += originalTextContent[i]; // Reveal character
+                            }
+                        }
+                    }
+                    element.textContent = revealedText; // Update with text content only during animation
+
+                    if (currentIndex <= textLength) {
+                        currentIndex += charsPerFrame; // Increment by multiple chars per frame for faster animation
+                    }
+
+                    // Determine if animation is truly finished
+                    const isFinished = revealedText === originalTextContent;
+
+                    if (isFinished || currentIndex > textLength + 10) { // Add buffer & check if text matches
+                         element.innerHTML = originalHtml; // Restore original HTML structure
+                         element.style.minHeight = ''; // Remove fixed height after animation completes
+                         cancelAnimationFrame(animationFrameId); // Stop animation loop
+                         if (options.onComplete) options.onComplete();
+                     } else {
+                         // Schedule next frame slightly delayed
+                         setTimeout(() => {
+                            animationFrameId = requestAnimationFrame(animate);
+                         }, speed);
+                     }
+                 };
+                 // Start animation after initial delay
+                 setTimeout(() => {
+                    animationFrameId = requestAnimationFrame(animate);
+                 }, initialDelay);
+            },
+            getRandomNoiseChar: function() {
+                return this.noiseCharacters[Math.floor(Math.random() * this.noiseCharacters.length)];
+            }
+        };
+        
+        // Create background dots
+        document.addEventListener('DOMContentLoaded', function () {
+            const dotsContainer = document.getElementById('dots-container');
+            const numDots = 150;
+
+            for (let i = 0; i < numDots; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                dot.style.left = `${Math.random() * 100}%`;
+                dot.style.top = `${Math.random() * 100}%`;
+                dot.style.opacity = Math.random() * 0.5;
+                dotsContainer.appendChild(dot);
+            }
+
+            // THREE.js background
+            const canvas = document.getElementById('canvas');
+
+            let scene, camera, renderer;
+
+            function init() {
+                // Create scene
+                scene = new THREE.Scene();
+
+                // Create camera
+                camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
+                camera.position.z = 5;
+
+                // Create renderer
+                renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setPixelRatio(window.devicePixelRatio);
+                canvas.appendChild(renderer.domElement);
+
+                // Add grid
+                const size = 100;
+                const divisions = 50;
+                const gridHelper = new THREE.GridHelper(size, divisions, 0x8B5CF6, 0x1E293B);
+                gridHelper.position.y = -5;
+                gridHelper.rotation.x = Math.PI / 2;
+                scene.add(gridHelper);
+
+                // Handle window resize
+                window.addEventListener('resize', onWindowResize, false);
+
+                animate();
+            }
+
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+
+                // Rotate grid
+                scene.rotation.z += 0.0005;
+
+                renderer.render(scene, camera);
+            }
+
+            init();
+            
+            // Intersection Observer for diffuser text animation
+            const diffuserObserverOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const diffuserObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Find animatable text elements in this section
+                        const textElements = entry.target.querySelectorAll('.animate-text');
+                        
+                        // Apply diffuser effect with staggered delays and faster reveal
+                        textElements.forEach((element, index) => {
+                            Diffuser.revealText(element, {
+                                speed: 80, // Ultra fast animation speed
+                                initialDelay: index * 80, // Shorter delay between elements
+                                noiseLevel: 0.08, // Lower noise for cleaner effect
+                                charsPerFrame: element.textContent.length > 100 ? 10 : 5 // More chars per frame for longer text
+                            });
+                        });
+                        
+                        // Only animate once
+                        diffuserObserver.unobserve(entry.target);
+                    }
+                });
+            }, diffuserObserverOptions);
+            
+            // Add 'animate-text' class to elements we want to animate
+            document.querySelectorAll('.section-title, .section-subtitle, .card-title, .hero-title, .hero-description, .about-text, .card-text').forEach(el => {
+                el.classList.add('animate-text');
+            });
+            
+            // Observe all sections for animation
+            document.querySelectorAll('section').forEach(section => {
+                diffuserObserver.observe(section);
+            });
+            
+            // Intersection Observer for regular animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements with animation
+            const sections = document.querySelectorAll('.cloud-section, .research-section, .solutions-section');
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            
+            // Create particles for multiple sections
+            function addParticlesToSection(section, count, colorClass) {
+                if (section) {
+                    for (let i = 0; i < count; i++) {
+                        const particle = document.createElement('div');
+                        particle.classList.add('particle');
+                        if (colorClass) {
+                            particle.classList.add(colorClass);
+                        }
+                        particle.style.left = `${Math.random() * 100}%`;
+                        particle.style.top = `${Math.random() * 100}%`;
+                        particle.style.animationDelay = `${Math.random() * 5}s`;
+                        particle.style.animationDuration = `${5 + Math.random() * 10}s`;
+                        const size = 1 + Math.random() * 3;
+                        particle.style.width = `${size}px`;
+                        particle.style.height = `${size}px`;
+                        section.appendChild(particle);
+                    }
+                }
+            }
+            
+            // Add particles to different sections with varying densities and colors
+            addParticlesToSection(document.querySelector('.research-section'), 40, 'particle-purple');
+            addParticlesToSection(document.querySelector('.about-section'), 30, 'particle-blue');
+            addParticlesToSection(document.querySelector('.crawl4ai-section'), 25, 'particle-cyan');
+            addParticlesToSection(document.querySelector('.cloud-section'), 35, 'particle-mix');
+            addParticlesToSection(document.querySelector('.solutions-section'), 20, 'particle-gold');
+            addParticlesToSection(document.querySelector('.careers-section'), 30, 'particle-green');
+            addParticlesToSection(document.querySelector('.contact-section'), 25, 'particle-white');
+            
+            // Partner logo hover effect
+            const partnerLogos = document.querySelectorAll('.partner-logo');
+            partnerLogos.forEach(logo => {
+                logo.addEventListener('mouseenter', function() {
+                    partnerLogos.forEach(otherLogo => {
+                        if (otherLogo !== logo) {
+                            otherLogo.style.opacity = '0.4';
+                        }
+                    });
+                });
+                
+                logo.addEventListener('mouseleave', function() {
+                    partnerLogos.forEach(otherLogo => {
+                        otherLogo.style.opacity = '';
+                    });
+                });
+            });
+            
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Create simplified world map
+            const worldMap = document.getElementById('world-map');
+            if (worldMap) {
+                // Define simplified map data (major countries outlines)
+                const mapSVG = `
+                <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+                    <!-- North America -->
+                    <path d="M160,120 L140,130 L130,160 L120,170 L100,180 L90,210 L80,250 L70,280 L90,300 L140,310 L210,290 L260,270 L280,230 L290,180 L270,150 L250,130 L230,120 L200,110 L160,120" />
+                    
+                    <!-- South America -->
+                    <path d="M250,320 L230,350 L220,380 L210,410 L210,440 L230,470 L260,480 L290,460 L300,430 L290,390 L280,350 L270,320 L250,320" />
+                    
+                    <!-- Europe -->
+                    <path d="M480,140 L460,150 L450,170 L470,190 L500,200 L520,180 L530,160 L520,140 L500,130 L480,140" />
+                    
+                    <!-- Africa -->
+                    <path d="M480,220 L460,260 L450,300 L460,340 L480,370 L510,380 L540,360 L550,330 L550,290 L530,250 L510,230 L480,220" />
+                    
+                    <!-- Asia -->
+                    <path d="M550,140 L570,120 L600,110 L640,120 L680,140 L700,170 L710,200 L720,230 L700,260 L670,280 L640,290 L610,270 L590,240 L580,210 L560,180 L550,150 L550,140" />
+                    
+                    <!-- Australia -->
+                    <path d="M830,360 L810,380 L800,400 L810,420 L830,430 L850,420 L860,400 L860,380 L850,360 L830,360" />
+                    
+                    <!-- Japan -->
+                    <path d="M760,180 L770,200 L760,220 L750,200 L760,180" />
+                    
+                    <!-- Indonesia -->
+                    <path d="M720,300 L730,310 L750,310 L760,300 L750,290 L730,290 L720,300" />
+                    
+                    <!-- Singapore (highlighted) -->
+                    <circle class="singapore" cx="737" cy="282" r="5" />
+                </svg>
+                `;
+                
+                worldMap.innerHTML = mapSVG;
+                
+                // Animate the map
+                const paths = worldMap.querySelectorAll('path');
+                paths.forEach(path => {
+                    const length = path.getTotalLength();
+                    path.style.strokeDasharray = length;
+                    path.style.strokeDashoffset = length;
+                    
+                    // Animate stroke
+                    path.style.animation = `draw-path 3s ease forwards ${Math.random() * 2}s`;
+                });
+                
+                // Add glowing effect to Singapore
+                const singaporePoint = worldMap.querySelector('.singapore');
+                singaporePoint.style.animation = 'glow-point 2s ease-in-out infinite alternate';
+            }
+        });
+        
+        // Path drawing animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes draw-path {
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+            
+            @keyframes glow-point {
+                from {
+                    filter: drop-shadow(0 0 2px rgba(45, 212, 191, 0.8));
+                }
+                to {
+                    filter: drop-shadow(0 0 10px rgba(45, 212, 191, 1));
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
